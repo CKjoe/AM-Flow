@@ -1,0 +1,565 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>AM - Flow</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+
+</head>
+
+<body>
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-4">
+                <h2>Choices</h2>
+                <select id="zoneSelect" class="selectpicker mb-3" data-width="100%">
+                    <option selected disabled>Zone</option>
+                    <option value="zone1">1</option>
+                    <option value="zone2">2</option>
+                    <option value="zone3">3</option>
+                    <option value="zone4">4</option>
+                    <option value="zone5">5</option>
+                    <option value="zone6">6</option>
+                    <option value="zone7">7</option>
+                    <option value="zone8">8</option>
+                    <option value="zone9">9</option>
+                    <option value="zone10">10</option>
+                </select>
+
+                <select id="sunshadeSelect" class="selectpicker mb-3" data-width="100%">
+                    <option selected disabled>Sunny/Shady</option>
+                    <option value="sunshade1">Full Sun</option>
+                    <option value="sunshade2">1/2 Sun, 1/2 Shade</option>
+                    <option value="sunshade3">Full Shade</option>
+                    <option value="sunshadeAll">Unknown</option>
+                </select>
+
+                <select id="soilMoistureSelect" class="selectpicker mb-3" data-width="100%">
+                    <option selected disabled>Soil Moisture</option>
+                    <option value="soilM1">Dry</option>
+                    <option value="soilM2">Average</option>
+                    <option value="soilM3">Well Draining</option>
+                    <option value="soilM4">Moist / Wet</option>
+                    <option value="soilMAll">Unknown</option>
+                </select>
+
+                <select id="yardSizeSelect" class="selectpicker mb-3" data-width="100%">
+                    <option selected disabled>Yard Size</option>
+                    <option value="yardSize1">Minimalist/Short</option>
+                    <option value="yardSize2">Borderline</option>
+                    <option value="yardSize3">Maximalist/Tall</option>
+                </select>
+
+                <select id="soilTypeSelect" class="selectpicker mb-3" data-width="100%">
+                    <option selected disabled>Soil Type</option>
+                    <option value="soilT1">Sandy Soil</option>
+                    <option value="soilT2">Clay Soil</option>
+                    <option value="soilT3">Average Soil</option>
+                    <option value="soilT4">Loamy Soil</option>
+                    <option value="soilT5">Drought/Dry Soil</option>
+                    <option value="soilT6">Well-Drained Soil</option>
+                    <option value="soilT7">Moist/Wet Soil</option>
+                    <option value="soilT8">Acidic Soil</option>
+                </select>
+
+                <select id="colorSelect" class="selectpicker mb-3" data-width="100%" multiple data-max-options="3" title="Colors">
+                    <option value="yellow">Yellow</option>
+                    <option value="orange">Orange</option>
+                    <option value="brown">Brown</option>
+                    <option value="darkred">Dark Red</option>
+                    <option value="scarletrose">Scarlet</option>
+                    <option value="red">Red</option>
+                    <option value="salmon">Salmon</option>
+                    <option value="pink">Pink</option>
+                    <option value="purple">Purple</option>
+                    <option value="lavender">Lavender</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="white">White</option>
+                    <option value="cream">Cream</option>
+                    <option value="rose">Rose</option>
+                    <option value="mix">Mix</option>
+                </select>
+
+                <select id="yardTidinessSelect" class="selectpicker mb-3" data-width="100%">
+                    <option selected disabled>Yard Tidiness</option>
+                    <option value="yardT1">No Mow</option>
+                    <option value="yardT2">Pollinator Patches</option>
+                    <option value="yardT3">Low Grow Meadow</option>
+                    <option value="yardT4">Wildflower Yard</option>
+                    <option value="yardTAll">Unknown</option>
+                </select>
+
+                <select id="yardHeightSelect" class="selectpicker mb-3" data-width="100%">
+                    <option selected disabled>Yard Height</option>
+                    <option value="yardH1">max 4in</option>
+                    <option value="yardH2">max 10in</option>
+                    <option value="yardH3">max 30in</option>
+                    <option value="yardH4">max 60in</option>
+                    <option value="yardH5">max 8ft</option>
+                    <option value="yardHAll">Unknown</option>
+                </select>
+
+                <select id="aestheticsSelect" class="selectpicker mb-3" data-width="100%" multiple title="Aesthetic Options">
+                    <option value="aesthetics1">Include Ornamental Grass</option>
+                    <option value="aesthetics2">Include Perennial Bulbs</option>
+                    <option value="aesthetics3">Include More Than 1 Seed Mix</option>
+                </select>
+
+                <select id="maintenanceSelect" class="selectpicker mb-3" data-width="100%" multiple title="Maintenance">
+                    <option value="maintenance1">Easy To Grow</option>
+                    <option value="maintenance2">Extended Bloom Time</option>
+                    <option value="maintenance3">Low Mainenance</option>
+                    <option value="maintenance4">Deer Resistant</option>
+                    <option value="maintenance5">Rabbit Resistant</option>
+                </select>
+
+                <select id="goodSelect" class="selectpicker mb-3" data-width="100%" multiple title="Doing Good">
+                    <option value="good1">Attract Birds</option>
+                    <option value="good2">Bee Friendly</option>
+                    <option value="good3">Attracts Butterflies</option>
+                    <option value="good4">Non-Invasive Plants</option>
+                    <option value="good5">Attracts Hummingbirds</option>
+                </select>
+
+                <select id="yearlySelect" class="selectpicker mb-3" data-width="100%" multiple title="Longevity">
+                    <option value="yearly1">Annuals - 1 year</option>
+                    <option value="yearly2">Biennials - 2 years</option>
+                    <option value="yearly3">Perennials - 2+ Years</option>
+                </select>
+            </div>
+
+             <div class="col-8">
+                <h2>Results</h2>
+                <div class="product 
+                    zone4 zone5 zone6 zone7
+                    sunshade1 sunshade2
+                    soilM2
+                    soilT1 soilT2 soilT3
+                    green
+                    yardT1 
+                    yardH1 yardH2 yardH3 yardH4 yardH5
+                    yardSize1
+                    yearly3
+                ">
+                    No Mow Lawn Grass Seed
+                </div>
+
+                <div class="product 
+                    zone3 zone4 zone5 zone6 zone7 zone8
+                    sunshade1 sunshade2 
+                    soilM1 soilM2 soilM3
+                    soilT1 soilT4
+                    green
+                    yardH2 yardH3 yardH4 yardH5
+                    maintenance1 maintenance3
+                    yardSize1
+                    yearly3
+                ">
+                    Microclover Seed (Pelleted)
+                </div>
+
+                <div class="product 
+                    zone4 zone5 zone6 zone7
+                    sunshade1 sunshade2
+                    soilM2 soilM3
+                    soilT1 soilT3 soilT4
+                    green
+                    yardT1
+                    yardH2 yardH3 yardH4 yardH5
+                    yardSize2
+                    yearly3
+                ">
+                    No Mow Lawn & Microclover Seed Mix
+                </div>
+
+                <div class="product 
+                    zone5 zone6 zone7 zone8 zone9 zone10
+                    sunshade1 sunshade2
+                    soilM2
+                    soilT1 soilT2 soilT3 soilT5
+                    green
+                    maintenance3
+                    yardSize2
+                    yearly3
+                ">
+                    Low Work and Water Dwarf Fescue
+                </div>
+
+                <div class="product 
+                    zone4 zone5 zone6 zone7 zone8
+                    sunshade1 
+                    soilM1 soilM2 soilM3 soilM4
+                    soilT1 soilT3 soilT4 soilT5 soilT6 soilT7
+                    green white purple yellow pink cream mix
+                    yardH1 yardH2 yardH3 yardH4 yardH5
+                    maintenance1
+                    good2
+                    yardSize3
+                    yearly2 yearly3
+                ">
+                    Pollinator Cover Crop Seed Mix
+                </div>
+
+                <div class="product 
+                    zone4 zone5 zone6 zone7
+                    sunshade1 sunshade2
+                    soilM2
+                    soilT1 soilT3 soilT4
+                    green
+                    yardT1
+                    yardH2 yardH3 yardH4 yardH5
+                    maintenance1
+                    good2 good3
+                    yardSize3
+                    yearly3
+                ">
+                    No Mow Flowering Lawn
+                </div>
+
+                <div class="product 
+                    zone1 zone2 zone3 zone4 zone5 zone6 zone7 zone8 zone9 zone10
+                    sunshade1 sunshade2 
+                    soilM1 soilM2 soilM3 soilM4
+                    soilT1 soilT2 soilT4 soilT5 soilT7 soilT8
+                    white rose yellow green purple blue pink lavender mix
+                    yardT4
+                    yardH3 yardH4 yardH5
+                    maintenance1 maintenance2 maintenance3
+                    good2 good3
+                    yardSize1
+                    yearly1 yearly3
+                ">
+                    Alternative Lawn Wildflower Seed Mix
+                </div>
+
+                <div class="product 
+                    zone3 zone4 zone5 zone6 zone7 zone8 zone9 zone10
+                    sunshade1 sunshade2
+                    soilM1 soilM2 soilM3 soilM4
+                    soilT1 soilT2 soilT4 soilT5 soilT7 soilT8
+                    red blue yellow brown purple white mix
+                    yardT4
+                    yardH3 yardH4 yardH5
+                    maintenance1 maintenance2 maintenance3
+                    good2 good3
+                    yardSize1
+                    yearly1
+                ">
+                    Wildflower Yard Annual Bold Color Mix
+                </div>
+
+                <div class="product 
+                    zone3 zone4 zone5 zone6 zone7 zone8 zone9 zone10
+                    sunshade1 sunshade2
+                    soilM1 soilM2 soilM3 soilM4
+                    soilT1 soilT2 soilT4 soilT5 soilT7 soilT8
+                    yellow pink red white lavender blue brown purple mix
+                    yardT4
+                    yardH3 yardH4 yardH5
+                    maintenance1 maintenance2 maintenance3
+                    good1 good2 good3
+                    yardSize2
+                    yearly1
+                ">
+                    Wildflower Yard Annual Vivid Variety
+                </div>
+
+                <div class="product 
+                    zone1 zone2 zone3 zone4 zone5 zone6 zone7 zone8 zone9 zone10
+                    sunshade1 sunshade2
+                    soilM1 soilM2 soilM3 soilM4
+                    soilT1 soilT2 soilT4 soilT5 soilT7 soilT8
+                    pink white yellow red blue orange purple mix
+                    yardT4
+                    yardH4 yardH5
+                    maintenance1 maintenance2 maintenance3
+                    good1 good2 good3
+                    yardSize2
+                    yearly1
+                ">
+                    Picket Fence Wildflower Seed Mix
+                </div>
+
+                <div class="product 
+                    zone3 zone4 zone5 zone6 zone7 zone8
+                    sunshade1 sunshade2
+                    soilM2 soilM3 
+                    soilT1 soilT4 soilT6
+                    rose purple orange blue white yellow red darkred pink mix
+                    yardT4
+                    yardH5
+                    maintenance1 maintenance2 maintenance3
+                    good2 good3
+                    yardSize3
+                    yearly1 yearly3
+                ">
+                    Mini Meadows Wildflower Seed Mix
+                </div>
+
+                <div class="product 
+                    zone1 zone2 zone3 zone4 zone5 zone6 zone7 zone8
+                    sunshade1 sunshade2
+                    soilM1 soilM2 soilM3 soilM4
+                    soilT1 soilT2 soilT4 soilT5 soilT7 soilT8
+                    yellow orange brown red scarlet/rose salmon purple blue pink mix
+                    yardT4
+                    yardH4 yardH5
+                    maintenance1 maintenance2 maintenance3
+                    good1 good2 good3
+                    yardSize3
+                    yearly2 yearly3
+                ">
+                    Perennial Beauty Wildflower Seed Mix
+                </div>
+
+                <div class="product 
+                    zone2 zone3 zone4 zone5 zone6 zone7 zone8 zone9
+                    sunshade1
+                    soilM1 soilM2 soilM3
+                    soilT1 soilT4 soilT5
+                    white
+                    yardH2 yardH3 yardH4 yardH5
+                    maintenance1 maintenance4
+                    good2 good3 good4
+                    yardSize1
+                    yearly3 
+                ">
+                    Amazing Grace Creeping Phlox
+                </div>
+
+                <div class="product 
+                    zone3 zone4 zone5 zone6 zone7 zone8
+                    sunshade2 sunshade3
+                    soilM2 soilM3 soilM4
+                    soilT2 soilT4 soilT7
+                    pink
+                    yardH2 yardH3 yardH4 yardH5
+                    maintenance2 maintenance4 maintenance5
+                    yardSize1
+                    yearly3
+                ">
+                    Orchid Frost Lamium
+                </div>
+
+                <div class="product 
+                    zone4 zone5 zone6 zone7 zone8 zone9
+                    sunshade1 sunshade2
+                    soilM2 soilM3 soilM4
+                    soilT2 soilT4 soilT7 soilT8
+                    red
+                    yardH4 yardH5
+                    maintenance2 maintenance4 maintenance5
+                    good1 good2 good3 good5 good4
+                    yardSize2
+                "> 
+                    Jacob Cline Bee Balm
+                </div>
+
+                <div class="product 
+                    zone5 zone6 zone7 zone8 zone9
+                    sunshade1
+                    soilM1 soilM2 soilM3
+                    soilT1 soilT4 soilT5 soilT6
+                    purple
+                    yardH4 yardH5
+                    maintenance3 maintenance4 maintenance5
+                    good2 good3
+                    yardSize2
+                ">
+                    Phenomenal Lavender
+                </div>
+
+                <div class="product 
+                    zone4 zone5 zone6 zone7 zone8
+                    sunshade1 
+                    soilM4
+                    soilT1 soilT2 soilT4 soilT6 soilT7
+                    pink
+                    yardH5
+                    maintenance2 maintenance4 maintenance5
+                    good1 good2 good3 good4
+                    yardSize3
+                ">
+                    Joe Pye Weed
+                </div>
+
+                <div class="product special aesthetics2 yearly3 d-none">
+                    Common Milkweed
+                </div>
+
+                <div class="product special aesthetics1 yearly3 d-none">
+                    Elijah Blue Fescue
+                </div>
+
+                <div class="product special aesthetics1 yearly3 d-none">
+                    Pennsylvania Sedge Grass
+                </div>
+
+                <div class="product special aesthetics1 yearly3 d-none">
+                    Karl Forester Feather Reed Grass
+                </div>
+
+                <div class="product special aesthetics1 yearly3 d-none">
+                    Prairie Blues Little Bluestem
+                </div>
+
+                <div class="product special aesthetics1 yearly3 d-none">
+                    Cloud Nine Tall Switchgrass / Northwind Switchgrass
+                </div>
+
+                <div class="product special aesthetics1 yearly3 d-none">
+                    Blackhawks Big Bluestem Grass
+                </div>
+
+             </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/farhadmammadli/bootstrap-select@main/js/bootstrap-select.min.js"></script>
+    <script>
+        jQuery('select').selectpicker();
+
+        $('.selectpicker').on('changed.bs.select', function (event, clickedIndex, newValue, oldValue){
+
+            var zone = $('#zoneSelect').val();
+            if(zone == null){
+                zone = '';
+            }
+
+            var sunshade = $('#sunshadeSelect').val();
+            if(sunshade == null || sunshade == 'sunshadeAll'){
+                sunshade = '';
+            }
+
+            var soilM = $('#soilMoistureSelect').val();
+            if(soilM == null || soilM == 'soilMAll'){
+                soilM = '';
+            }
+
+            var soilT = $('#soilTypeSelect').val();
+            if(soilT == null){
+                soilT = '';
+            }
+
+            var colors = $('#colorSelect').val();
+            var colorString;
+            if(colors == null || colors.length === 0){
+                colors = '';
+            }else{
+                colorString = "."+ colors.join(".")
+            }
+
+            var yardH = $('#yardHeightSelect').val();
+            if(yardH == null || yardH == 'yardHAll'){
+                yardH = '';
+            }
+
+            var maintenance = $('#maintenanceSelect').val();
+            var maintenanceString;
+            if(maintenance == null || maintenance.length === 0){
+                maintenance = '';
+            }else{
+                maintenanceString = "."+ maintenance.join(".")
+            }
+
+            var yardSize = $('#yardSizeSelect').val();
+            if(yardSize == null){
+                yardSize = '';
+            }
+
+            var yardTidiness = $('#yardTidinessSelect').val();
+            if(yardTidiness == null || yardTidiness == 'yardTAll'){
+                yardTidiness = '';
+            }
+
+            var good = $('#goodSelect').val();
+            var goodString;
+            if(good == null || good.length === 0){
+                good = '';
+            }else{
+                goodString = "."+ good.join(".")
+            }
+
+            var yearly = $('#yearlySelect').val();
+            var yearlyString;
+            if(yearly == null || yearly.length === 0){
+                yearly = '';
+            }else{
+                yearlyString = "."+ yearly.join(".")
+            }
+
+            
+
+            $('.product').each(function(){
+                if( ($(this).hasClass(zone) || zone=='')
+                     && ($(this).hasClass(sunshade) || sunshade=='')
+                     && ($(this).hasClass(soilM) || soilM=='')
+                     && ($(this).hasClass(soilT) || soilT=='')
+                     && ($(this).is(colorString) || colors == '')
+                     && ($(this).hasClass(yardH) || yardH=='')
+                     && ($(this).is(maintenanceString) || maintenance == '')
+                     && ($(this).hasClass(yardSize) || yardSize=='')
+                     && ($(this).hasClass(yardTidiness) || yardTidiness=='')
+                     && ($(this).is(goodString) || good == '')
+                     && ($(this).is(yearlyString) || yearly == '')
+                ){
+                    $(this).removeClass('d-none');
+                }else{
+                    $(this).addClass('d-none');
+                }
+            });
+
+
+            // aesthetics is different
+            var aesthtics = $('#aestheticsSelect').val();
+            var aesthticString;
+            if(aesthtics != null && aesthtics.length > 0){
+                aesthticString = aesthtics.join(", ");
+                $('.special').each(function(){
+                    if($(this).hasClasses(aesthticString)){
+                        $(this).removeClass('d-none');
+                    }else{
+                        $(this).addClass('d-none')
+                    }
+                });
+            }else{
+                $('.special').each(function(){
+                    $(this).addClass('d-none')
+                });
+            }
+            
+            
+            
+        });
+
+
+
+
+
+
+
+        $.fn.extend({
+             hasClasses: function( selector ) {
+                var classNamesRegex = new RegExp("( " + selector.replace(/ +/g,"").replace(/,/g, " | ") + " )"),
+                    rclass = /[\n\t\r]/g,
+                    i = 0,
+                    l = this.length;
+                for ( ; i < l; i++ ) {
+                    if ( this[i].nodeType === 1 && classNamesRegex.test((" " + this[i].className + " ").replace(rclass, " "))) {
+                        return true;
+                    }
+                }
+                return false;
+            }
+        });
+    </script>
+</body>
+</html>
