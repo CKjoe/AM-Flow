@@ -18,6 +18,7 @@
         <div class="row">
             <div class="col-4">
                 <h2>Choices</h2>
+                <label>Zone</label>
                 <select id="zoneSelect" class="selectpicker mb-3" data-width="100%">
                     <option selected disabled>Zone</option>
                     <option value="zone1">1</option>
@@ -30,8 +31,10 @@
                     <option value="zone8">8</option>
                     <option value="zone9">9</option>
                     <option value="zone10">10</option>
+                    <option value="zoneAll">Unknown</option>
                 </select>
 
+                <label>Sunny/Shady</label>
                 <select id="sunshadeSelect" class="selectpicker mb-3" data-width="100%">
                     <option selected disabled>Sunny/Shady</option>
                     <option value="sunshade1">Full Sun</option>
@@ -40,6 +43,7 @@
                     <option value="sunshadeAll">Unknown</option>
                 </select>
 
+                <label>Soil Moisture</label>
                 <select id="soilMoistureSelect" class="selectpicker mb-3" data-width="100%">
                     <option selected disabled>Soil Moisture</option>
                     <option value="soilM1">Dry</option>
@@ -49,13 +53,16 @@
                     <option value="soilMAll">Unknown</option>
                 </select>
 
+                <label>Yard Size</label>
                 <select id="yardSizeSelect" class="selectpicker mb-3" data-width="100%">
                     <option selected disabled>Yard Size</option>
                     <option value="yardSize1">Minimalist/Short</option>
                     <option value="yardSize2">Borderline</option>
                     <option value="yardSize3">Maximalist/Tall</option>
+                    <option value="yardSizeAll">Unknown</option>
                 </select>
 
+                <label>Soil Type</label>
                 <select id="soilTypeSelect" class="selectpicker mb-3" data-width="100%">
                     <option selected disabled>Soil Type</option>
                     <option value="soilT1">Sandy Soil</option>
@@ -66,27 +73,30 @@
                     <option value="soilT6">Well-Drained Soil</option>
                     <option value="soilT7">Moist/Wet Soil</option>
                     <option value="soilT8">Acidic Soil</option>
+                    <option value="soilTAll">Unknown</option>
                 </select>
 
+                <label>Colors</label>
                 <select id="colorSelect" class="selectpicker mb-3" data-width="100%" multiple data-max-options="3" title="Colors">
                     <option value="yellow">Yellow</option>
                     <option value="orange">Orange</option>
                     <option value="brown">Brown</option>
-                    <option value="darkred">Dark Red</option>
-                    <option value="scarletrose">Scarlet</option>
-                    <option value="red">Red</option>
-                    <option value="salmon">Salmon</option>
-                    <option value="pink">Pink</option>
+                    <option value="darkred">Dark Red + Scarlet + Red</option>
+                    <!-- <option value="scarletrose">Scarlet</option> -->
+                    <!-- <option value="red">Red</option> -->
+                    <!-- <option value="salmon">Salmon</option> -->
+                    <option value="pink">Pink + Rose + Salmon</option>
                     <option value="purple">Purple</option>
                     <option value="lavender">Lavender</option>
                     <option value="blue">Blue</option>
                     <option value="green">Green</option>
-                    <option value="white">White</option>
-                    <option value="cream">Cream</option>
-                    <option value="rose">Rose</option>
+                    <!-- <option value="white">White</option> -->
+                    <option value="cream">Cream + White</option>
+                    <!-- <option value="rose">Rose</option> -->
                     <option value="mix">Mix</option>
                 </select>
 
+                <label>Yard Tidiness</label>
                 <select id="yardTidinessSelect" class="selectpicker mb-3" data-width="100%">
                     <option selected disabled>Yard Tidiness</option>
                     <option value="yardT1">No Mow</option>
@@ -96,6 +106,7 @@
                     <option value="yardTAll">Unknown</option>
                 </select>
 
+                <label>Yard Height</label>
                 <select id="yardHeightSelect" class="selectpicker mb-3" data-width="100%">
                     <option selected disabled>Yard Height</option>
                     <option value="yardH1">max 4in</option>
@@ -106,12 +117,14 @@
                     <option value="yardHAll">Unknown</option>
                 </select>
 
+                <!-- <label>Aesthetic Options</label>
                 <select id="aestheticsSelect" class="selectpicker mb-3" data-width="100%" multiple title="Aesthetic Options">
                     <option value="aesthetics1">Include Ornamental Grass</option>
                     <option value="aesthetics2">Include Perennial Bulbs</option>
                     <option value="aesthetics3">Include More Than 1 Seed Mix</option>
-                </select>
+                </select> -->
 
+                <label>Maintenance</label>
                 <select id="maintenanceSelect" class="selectpicker mb-3" data-width="100%" multiple title="Maintenance">
                     <option value="maintenance1">Easy To Grow</option>
                     <option value="maintenance2">Extended Bloom Time</option>
@@ -120,6 +133,7 @@
                     <option value="maintenance5">Rabbit Resistant</option>
                 </select>
 
+                <label>Doing Good</label>
                 <select id="goodSelect" class="selectpicker mb-3" data-width="100%" multiple title="Doing Good">
                     <option value="good1">Attract Birds</option>
                     <option value="good2">Bee Friendly</option>
@@ -128,296 +142,298 @@
                     <option value="good5">Attracts Hummingbirds</option>
                 </select>
 
+                <!-- <label>Longevity</label>
                 <select id="yearlySelect" class="selectpicker mb-3" data-width="100%" multiple title="Longevity">
                     <option value="yearly1">Annuals - 1 year</option>
                     <option value="yearly2">Biennials - 2 years</option>
                     <option value="yearly3">Perennials - 2+ Years</option>
-                </select>
+                </select> -->
             </div>
 
              <div class="col-8">
                 <h2>Results</h2>
-                <div class="product 
-                    zone4 zone5 zone6 zone7
-                    sunshade1 sunshade2
-                    soilM2
-                    soilT1 soilT2 soilT3
-                    green
-                    yardT1 
-                    yardH1 yardH2 yardH3 yardH4 yardH5
-                    yardSize1
-                    yearly3
-                ">
-                    No Mow Lawn Grass Seed
-                </div>
+                <ul>
+                    <li class="product 
+                        zone4 zone5 zone6 zone7
+                        sunshade1 sunshade2
+                        soilM2
+                        soilT1 soilT2 soilT3
+                        green
+                        yardT1 
+                        yardH1 yardH2 yardH3 yardH4 yardH5
+                        yardSize1
+                        yearly3
+                    ">
+                        No Mow Lawn Grass Seed
+                    </li>
 
-                <div class="product 
-                    zone3 zone4 zone5 zone6 zone7 zone8
-                    sunshade1 sunshade2 
-                    soilM1 soilM2 soilM3
-                    soilT1 soilT4
-                    green
-                    yardH2 yardH3 yardH4 yardH5
-                    maintenance1 maintenance3
-                    yardSize1
-                    yearly3
-                ">
-                    Microclover Seed (Pelleted)
-                </div>
+                    <li class="product 
+                        zone3 zone4 zone5 zone6 zone7 zone8
+                        sunshade1 sunshade2 
+                        soilM1 soilM2 soilM3
+                        soilT1 soilT4
+                        green
+                        yardH2 yardH3 yardH4 yardH5
+                        maintenance1 maintenance3
+                        yardSize1
+                        yearly3
+                    ">
+                        Microclover Seed (Pelleted)
+                    </li>
 
-                <div class="product 
-                    zone4 zone5 zone6 zone7
-                    sunshade1 sunshade2
-                    soilM2 soilM3
-                    soilT1 soilT3 soilT4
-                    green
-                    yardT1
-                    yardH2 yardH3 yardH4 yardH5
-                    yardSize2
-                    yearly3
-                ">
-                    No Mow Lawn & Microclover Seed Mix
-                </div>
+                    <li class="product 
+                        zone4 zone5 zone6 zone7
+                        sunshade1 sunshade2
+                        soilM2 soilM3
+                        soilT1 soilT3 soilT4
+                        green
+                        yardT1
+                        yardH2 yardH3 yardH4 yardH5
+                        yardSize2
+                        yearly3
+                    ">
+                        No Mow Lawn & Microclover Seed Mix
+                    </li>
 
-                <div class="product 
-                    zone5 zone6 zone7 zone8 zone9 zone10
-                    sunshade1 sunshade2
-                    soilM2
-                    soilT1 soilT2 soilT3 soilT5
-                    green
-                    maintenance3
-                    yardSize2
-                    yearly3
-                ">
-                    Low Work and Water Dwarf Fescue
-                </div>
+                    <li class="product 
+                        zone5 zone6 zone7 zone8 zone9 zone10
+                        sunshade1 sunshade2
+                        soilM2
+                        soilT1 soilT2 soilT3 soilT5
+                        green
+                        maintenance3
+                        yardSize2
+                        yearly3
+                    ">
+                        Low Work and Water Dwarf Fescue
+                    </li>
 
-                <div class="product 
-                    zone4 zone5 zone6 zone7 zone8
-                    sunshade1 
-                    soilM1 soilM2 soilM3 soilM4
-                    soilT1 soilT3 soilT4 soilT5 soilT6 soilT7
-                    green white purple yellow pink cream mix
-                    yardH1 yardH2 yardH3 yardH4 yardH5
-                    maintenance1
-                    good2
-                    yardSize3
-                    yearly2 yearly3
-                ">
-                    Pollinator Cover Crop Seed Mix
-                </div>
+                    <li class="product 
+                        zone4 zone5 zone6 zone7 zone8
+                        sunshade1 
+                        soilM1 soilM2 soilM3 soilM4
+                        soilT1 soilT3 soilT4 soilT5 soilT6 soilT7
+                        green purple yellow pink cream mix
+                        yardH1 yardH2 yardH3 yardH4 yardH5
+                        maintenance1
+                        good2
+                        yardSize3
+                        yearly2 yearly3
+                    ">
+                        Pollinator Cover Crop Seed Mix
+                    </li>
 
-                <div class="product 
-                    zone4 zone5 zone6 zone7
-                    sunshade1 sunshade2
-                    soilM2
-                    soilT1 soilT3 soilT4
-                    green
-                    yardT1
-                    yardH2 yardH3 yardH4 yardH5
-                    maintenance1
-                    good2 good3
-                    yardSize3
-                    yearly3
-                ">
-                    No Mow Flowering Lawn
-                </div>
+                    <li class="product 
+                        zone4 zone5 zone6 zone7
+                        sunshade1 sunshade2
+                        soilM2
+                        soilT1 soilT3 soilT4
+                        green
+                        yardT1
+                        yardH2 yardH3 yardH4 yardH5
+                        maintenance1
+                        good2 good3
+                        yardSize3
+                        yearly3
+                    ">
+                        No Mow Flowering Lawn
+                    </li>
 
-                <div class="product 
-                    zone1 zone2 zone3 zone4 zone5 zone6 zone7 zone8 zone9 zone10
-                    sunshade1 sunshade2 
-                    soilM1 soilM2 soilM3 soilM4
-                    soilT1 soilT2 soilT4 soilT5 soilT7 soilT8
-                    white rose yellow green purple blue pink lavender mix
-                    yardT4
-                    yardH3 yardH4 yardH5
-                    maintenance1 maintenance2 maintenance3
-                    good2 good3
-                    yardSize1
-                    yearly1 yearly3
-                ">
-                    Alternative Lawn Wildflower Seed Mix
-                </div>
+                    <li class="product 
+                        zone1 zone2 zone3 zone4 zone5 zone6 zone7 zone8 zone9 zone10
+                        sunshade1 sunshade2 
+                        soilM1 soilM2 soilM3 soilM4
+                        soilT1 soilT2 soilT4 soilT5 soilT7 soilT8
+                        cream yellow green purple blue pink lavender mix
+                        yardT4
+                        yardH3 yardH4 yardH5
+                        maintenance1 maintenance2 maintenance3
+                        good2 good3
+                        yardSize1
+                        yearly1 yearly3
+                    ">
+                        Alternative Lawn Wildflower Seed Mix
+                    </li>
 
-                <div class="product 
-                    zone3 zone4 zone5 zone6 zone7 zone8 zone9 zone10
-                    sunshade1 sunshade2
-                    soilM1 soilM2 soilM3 soilM4
-                    soilT1 soilT2 soilT4 soilT5 soilT7 soilT8
-                    red blue yellow brown purple white mix
-                    yardT4
-                    yardH3 yardH4 yardH5
-                    maintenance1 maintenance2 maintenance3
-                    good2 good3
-                    yardSize1
-                    yearly1
-                ">
-                    Wildflower Yard Annual Bold Color Mix
-                </div>
+                    <li class="product 
+                        zone3 zone4 zone5 zone6 zone7 zone8 zone9 zone10
+                        sunshade1 sunshade2
+                        soilM1 soilM2 soilM3 soilM4
+                        soilT1 soilT2 soilT4 soilT5 soilT7 soilT8
+                        darkred blue yellow brown purple cream mix
+                        yardT4
+                        yardH3 yardH4 yardH5
+                        maintenance1 maintenance2 maintenance3
+                        good2 good3
+                        yardSize1
+                        yearly1
+                    ">
+                        Wildflower Yard Annual Bold Color Mix
+                    </li>
 
-                <div class="product 
-                    zone3 zone4 zone5 zone6 zone7 zone8 zone9 zone10
-                    sunshade1 sunshade2
-                    soilM1 soilM2 soilM3 soilM4
-                    soilT1 soilT2 soilT4 soilT5 soilT7 soilT8
-                    yellow pink red white lavender blue brown purple mix
-                    yardT4
-                    yardH3 yardH4 yardH5
-                    maintenance1 maintenance2 maintenance3
-                    good1 good2 good3
-                    yardSize2
-                    yearly1
-                ">
-                    Wildflower Yard Annual Vivid Variety
-                </div>
+                    <li class="product 
+                        zone3 zone4 zone5 zone6 zone7 zone8 zone9 zone10
+                        sunshade1 sunshade2
+                        soilM1 soilM2 soilM3 soilM4
+                        soilT1 soilT2 soilT4 soilT5 soilT7 soilT8
+                        yellow pink darkred cream lavender blue brown purple mix
+                        yardT4
+                        yardH3 yardH4 yardH5
+                        maintenance1 maintenance2 maintenance3
+                        good1 good2 good3
+                        yardSize2
+                        yearly1
+                    ">
+                        Wildflower Yard Annual Vivid Variety
+                    </li>
 
-                <div class="product 
-                    zone1 zone2 zone3 zone4 zone5 zone6 zone7 zone8 zone9 zone10
-                    sunshade1 sunshade2
-                    soilM1 soilM2 soilM3 soilM4
-                    soilT1 soilT2 soilT4 soilT5 soilT7 soilT8
-                    pink white yellow red blue orange purple mix
-                    yardT4
-                    yardH4 yardH5
-                    maintenance1 maintenance2 maintenance3
-                    good1 good2 good3
-                    yardSize2
-                    yearly1
-                ">
-                    Picket Fence Wildflower Seed Mix
-                </div>
+                    <li class="product 
+                        zone1 zone2 zone3 zone4 zone5 zone6 zone7 zone8 zone9 zone10
+                        sunshade1 sunshade2
+                        soilM1 soilM2 soilM3 soilM4
+                        soilT1 soilT2 soilT4 soilT5 soilT7 soilT8
+                        pink cream yellow darkred blue orange purple mix
+                        yardT4
+                        yardH4 yardH5
+                        maintenance1 maintenance2 maintenance3
+                        good1 good2 good3
+                        yardSize2
+                        yearly1
+                    ">
+                        Picket Fence Wildflower Seed Mix
+                    </li>
 
-                <div class="product 
-                    zone3 zone4 zone5 zone6 zone7 zone8
-                    sunshade1 sunshade2
-                    soilM2 soilM3 
-                    soilT1 soilT4 soilT6
-                    rose purple orange blue white yellow red darkred pink mix
-                    yardT4
-                    yardH5
-                    maintenance1 maintenance2 maintenance3
-                    good2 good3
-                    yardSize3
-                    yearly1 yearly3
-                ">
-                    Mini Meadows Wildflower Seed Mix
-                </div>
+                    <li class="product 
+                        zone3 zone4 zone5 zone6 zone7 zone8
+                        sunshade1 sunshade2
+                        soilM2 soilM3 
+                        soilT1 soilT4 soilT6
+                         purple orange blue cream yellow darkred pink mix
+                        yardT4
+                        yardH5
+                        maintenance1 maintenance2 maintenance3
+                        good2 good3
+                        yardSize3
+                        yearly1 yearly3
+                    ">
+                        Mini Meadows Wildflower Seed Mix
+                    </li>
 
-                <div class="product 
-                    zone1 zone2 zone3 zone4 zone5 zone6 zone7 zone8
-                    sunshade1 sunshade2
-                    soilM1 soilM2 soilM3 soilM4
-                    soilT1 soilT2 soilT4 soilT5 soilT7 soilT8
-                    yellow orange brown red scarlet/rose salmon purple blue pink mix
-                    yardT4
-                    yardH4 yardH5
-                    maintenance1 maintenance2 maintenance3
-                    good1 good2 good3
-                    yardSize3
-                    yearly2 yearly3
-                ">
-                    Perennial Beauty Wildflower Seed Mix
-                </div>
+                    <li class="product 
+                        zone1 zone2 zone3 zone4 zone5 zone6 zone7 zone8
+                        sunshade1 sunshade2
+                        soilM1 soilM2 soilM3 soilM4
+                        soilT1 soilT2 soilT4 soilT5 soilT7 soilT8
+                        yellow orange brown darkred purple blue pink mix
+                        yardT4
+                        yardH4 yardH5
+                        maintenance1 maintenance2 maintenance3
+                        good1 good2 good3
+                        yardSize3
+                        yearly2 yearly3
+                    ">
+                        Perennial Beauty Wildflower Seed Mix
+                    </li>
 
-                <div class="product 
-                    zone2 zone3 zone4 zone5 zone6 zone7 zone8 zone9
-                    sunshade1
-                    soilM1 soilM2 soilM3
-                    soilT1 soilT4 soilT5
-                    white
-                    yardH2 yardH3 yardH4 yardH5
-                    maintenance1 maintenance4
-                    good2 good3 good4
-                    yardSize1
-                    yearly3 
-                ">
-                    Amazing Grace Creeping Phlox
-                </div>
+                    <li class="product 
+                        zone2 zone3 zone4 zone5 zone6 zone7 zone8 zone9
+                        sunshade1
+                        soilM1 soilM2 soilM3
+                        soilT1 soilT4 soilT5
+                        cream
+                        yardH2 yardH3 yardH4 yardH5
+                        maintenance1 maintenance4
+                        good2 good3 good4
+                        yardSize1
+                        yearly3 
+                    ">
+                        Amazing Grace Creeping Phlox
+                    </li>
 
-                <div class="product 
-                    zone3 zone4 zone5 zone6 zone7 zone8
-                    sunshade2 sunshade3
-                    soilM2 soilM3 soilM4
-                    soilT2 soilT4 soilT7
-                    pink
-                    yardH2 yardH3 yardH4 yardH5
-                    maintenance2 maintenance4 maintenance5
-                    yardSize1
-                    yearly3
-                ">
-                    Orchid Frost Lamium
-                </div>
+                    <li class="product 
+                        zone3 zone4 zone5 zone6 zone7 zone8
+                        sunshade2 sunshade3
+                        soilM2 soilM3 soilM4
+                        soilT2 soilT4 soilT7
+                        pink
+                        yardH2 yardH3 yardH4 yardH5
+                        maintenance2 maintenance4 maintenance5
+                        yardSize1
+                        yearly3
+                    ">
+                        Orchid Frost Lamium
+                    </li>
 
-                <div class="product 
-                    zone4 zone5 zone6 zone7 zone8 zone9
-                    sunshade1 sunshade2
-                    soilM2 soilM3 soilM4
-                    soilT2 soilT4 soilT7 soilT8
-                    red
-                    yardH4 yardH5
-                    maintenance2 maintenance4 maintenance5
-                    good1 good2 good3 good5 good4
-                    yardSize2
-                "> 
-                    Jacob Cline Bee Balm
-                </div>
+                    <li class="product 
+                        zone4 zone5 zone6 zone7 zone8 zone9
+                        sunshade1 sunshade2
+                        soilM2 soilM3 soilM4
+                        soilT2 soilT4 soilT7 soilT8
+                        darkred
+                        yardH4 yardH5
+                        maintenance2 maintenance4 maintenance5
+                        good1 good2 good3 good5 good4
+                        yardSize2
+                    "> 
+                        Jacob Cline Bee Balm
+                    </li>
 
-                <div class="product 
-                    zone5 zone6 zone7 zone8 zone9
-                    sunshade1
-                    soilM1 soilM2 soilM3
-                    soilT1 soilT4 soilT5 soilT6
-                    purple
-                    yardH4 yardH5
-                    maintenance3 maintenance4 maintenance5
-                    good2 good3
-                    yardSize2
-                ">
-                    Phenomenal Lavender
-                </div>
+                    <li class="product 
+                        zone5 zone6 zone7 zone8 zone9
+                        sunshade1
+                        soilM1 soilM2 soilM3
+                        soilT1 soilT4 soilT5 soilT6
+                        purple
+                        yardH4 yardH5
+                        maintenance3 maintenance4 maintenance5
+                        good2 good3
+                        yardSize2
+                    ">
+                        Phenomenal Lavender
+                    </li>
 
-                <div class="product 
-                    zone4 zone5 zone6 zone7 zone8
-                    sunshade1 
-                    soilM4
-                    soilT1 soilT2 soilT4 soilT6 soilT7
-                    pink
-                    yardH5
-                    maintenance2 maintenance4 maintenance5
-                    good1 good2 good3 good4
-                    yardSize3
-                ">
-                    Joe Pye Weed
-                </div>
+                    <li class="product 
+                        zone4 zone5 zone6 zone7 zone8
+                        sunshade1 
+                        soilM4
+                        soilT1 soilT2 soilT4 soilT6 soilT7
+                        pink
+                        yardH5
+                        maintenance2 maintenance4 maintenance5
+                        good1 good2 good3 good4
+                        yardSize3
+                    ">
+                        Joe Pye Weed
+                    </li>
 
-                <div class="product special aesthetics2 yearly3 d-none">
-                    Common Milkweed
-                </div>
+                    <li class="special aesthetics2 yearly3">
+                        Common Milkweed
+                    </li>
 
-                <div class="product special aesthetics1 yearly3 d-none">
-                    Elijah Blue Fescue
-                </div>
+                    <li class="special aesthetics1 yearly3">
+                        Elijah Blue Fescue
+                    </li>
 
-                <div class="product special aesthetics1 yearly3 d-none">
-                    Pennsylvania Sedge Grass
-                </div>
+                    <li class="special aesthetics1 yearly3">
+                        Pennsylvania Sedge Grass
+                    </li>
 
-                <div class="product special aesthetics1 yearly3 d-none">
-                    Karl Forester Feather Reed Grass
-                </div>
+                    <li class="special aesthetics1 yearly3">
+                        Karl Forester Feather Reed Grass
+                    </li>
 
-                <div class="product special aesthetics1 yearly3 d-none">
-                    Prairie Blues Little Bluestem
-                </div>
+                    <li class="special aesthetics1 yearly3">
+                        Prairie Blues Little Bluestem
+                    </li>
 
-                <div class="product special aesthetics1 yearly3 d-none">
-                    Cloud Nine Tall Switchgrass / Northwind Switchgrass
-                </div>
+                    <li class="special aesthetics1 yearly3">
+                        Cloud Nine Tall Switchgrass / Northwind Switchgrass
+                    </li>
 
-                <div class="product special aesthetics1 yearly3 d-none">
-                    Blackhawks Big Bluestem Grass
-                </div>
-
+                    <li class="special aesthetics1 yearly3">
+                        Blackhawks Big Bluestem Grass
+                    </li>
+                </ul>
              </div>
         </div>
     </div>
@@ -430,7 +446,7 @@
         $('.selectpicker').on('changed.bs.select', function (event, clickedIndex, newValue, oldValue){
 
             var zone = $('#zoneSelect').val();
-            if(zone == null){
+            if(zone == null || zone=='zoneAll'){
                 zone = '';
             }
 
@@ -445,7 +461,7 @@
             }
 
             var soilT = $('#soilTypeSelect').val();
-            if(soilT == null){
+            if(soilT == null || soilT == 'soilTAll'){
                 soilT = '';
             }
 
@@ -471,7 +487,7 @@
             }
 
             var yardSize = $('#yardSizeSelect').val();
-            if(yardSize == null){
+            if(yardSize == null || yardSize == 'yardSizeAll'){
                 yardSize = '';
             }
 
@@ -511,30 +527,30 @@
                      && ($(this).is(goodString) || good == '')
                      && ($(this).is(yearlyString) || yearly == '')
                 ){
-                    $(this).removeClass('d-none');
+                    $(this).removeClass('nope');
                 }else{
-                    $(this).addClass('d-none');
+                    $(this).addClass('nope');
                 }
             });
 
 
             // aesthetics is different
-            var aesthtics = $('#aestheticsSelect').val();
-            var aesthticString;
-            if(aesthtics != null && aesthtics.length > 0){
-                aesthticString = aesthtics.join(", ");
-                $('.special').each(function(){
-                    if($(this).hasClasses(aesthticString)){
-                        $(this).removeClass('d-none');
-                    }else{
-                        $(this).addClass('d-none')
-                    }
-                });
-            }else{
-                $('.special').each(function(){
-                    $(this).addClass('d-none')
-                });
-            }
+            // var aesthtics = $('#aestheticsSelect').val();
+            // var aesthticString;
+            // if(aesthtics != null && aesthtics.length > 0){
+            //     aesthticString = aesthtics.join(", ");
+            //     $('.special').each(function(){
+            //         if($(this).hasClasses(aesthticString)){
+            //             $(this).removeClass('nope');
+            //         }else{
+            //             $(this).addClass('nope')
+            //         }
+            //     });
+            // }else{
+            //     $('.special').each(function(){
+            //         $(this).addClass('nope')
+            //     });
+            // }
             
             
             
@@ -561,5 +577,10 @@
             }
         });
     </script>
+
+
+    <style>
+        .nope{color:#aaa}
+    </style>
 </body>
 </html>
