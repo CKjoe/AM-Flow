@@ -77,7 +77,7 @@
                 </select>
 
                 <label>Colors</label>
-                <select id="colorSelect" class="selectpicker mb-3" data-width="100%" multiple data-max-options="3" title="Colors">
+                <select id="colorSelect" class="selectpicker mb-3" data-width="100%" multiple title="Colors">
                     <option value="yellow">Yellow</option>
                     <option value="orange">Orange</option>
                     <option value="brown">Brown</option>
@@ -99,10 +99,15 @@
                 <label>Yard Tidiness</label>
                 <select id="yardTidinessSelect" class="selectpicker mb-3" data-width="100%">
                     <option selected disabled>Yard Tidiness</option>
-                    <option value="yardT1">No Mow</option>
+                    <!-- <option value="yardT1">No Mow</option>
                     <option value="yardT2">Pollinator Patches</option>
                     <option value="yardT3">Low Grow Meadow</option>
-                    <option value="yardT4">Wildflower Yard</option>
+                    <option value="yardT4">Wildflower Yard</option> -->
+
+                    <option value="yardSize1">Minimalist/Short</option>
+                    <option value="yardSize2">Borderline</option>
+                    <option value="yardSize3">Maximalist/Tall</option>
+
                     <option value="yardTAll">Unknown</option>
                 </select>
 
@@ -126,11 +131,12 @@
 
                 <label>Maintenance</label>
                 <select id="maintenanceSelect" class="selectpicker mb-3" data-width="100%" multiple title="Maintenance">
-                    <option value="maintenance1">Easy To Grow</option>
-                    <option value="maintenance2">Extended Bloom Time</option>
-                    <option value="maintenance3">Low Mainenance</option>
-                    <option value="maintenance4">Deer Resistant</option>
-                    <option value="maintenance5">Rabbit Resistant</option>
+                    <option value="maintenance1">Easy To Grow &#128077;</option>
+
+                    <option value="maintenance2">Extended Bloom Time &#9201;</option>
+                    <option value="maintenance3">Low Mainenance &#127803;</option>
+                    <option value="maintenance4">Deer Resistant &#129420;</option>
+                    <option value="maintenance5">Rabbit Resistant &#128007;</option>
                 </select>
 
                 <label>Doing Good</label>
@@ -164,7 +170,8 @@
                         yardSize1
                         yearly3
                     ">
-                        No Mow Lawn Grass Seed
+                        No Mow Lawn Grass Seed 
+                            <span class="color d-none green"></span>
                     </li>
 
                     <li class="product 
@@ -178,7 +185,10 @@
                         yardSize1
                         yearly3
                     ">
-                        Microclover Seed (Pelleted)
+                        Microclover Seed (Pelleted) 
+                            <span class="maintenance1 d-none">&#128077;</span> 
+                            <span class="maintenance3 d-none">&#127803;</span>
+                            <span class="color d-none green"></span> 
                     </li>
 
                     <li class="product 
@@ -192,7 +202,8 @@
                         yardSize2
                         yearly3
                     ">
-                        No Mow Lawn & Microclover Seed Mix
+                        No Mow Lawn & Microclover Seed Mix 
+                            <span class="color d-none green"></span>
                     </li>
 
                     <li class="product 
@@ -205,7 +216,9 @@
                         yardSize2
                         yearly3
                     ">
-                        Low Work and Water Dwarf Fescue
+                        Low Work and Water Dwarf Fescue 
+                            <span class="color d-none green"></span>
+                            <span class="maintenance3 d-none">&#127803;</span>
                     </li>
 
                     <li class="product 
@@ -220,7 +233,15 @@
                         yardSize3
                         yearly2 yearly3
                     ">
-                        Pollinator Cover Crop Seed Mix <span class="good2 d-none">&#128029;</span>
+                        Pollinator Cover Crop Seed Mix 
+                            <span class="good2 d-none">&#128029;</span> 
+                            <span class="maintenance1 d-none">&#128077;</span> 
+                            <span class="color d-none green"></span> 
+                            <span class="color d-none purple"></span> 
+                            <span class="color d-none yellow"></span> 
+                            <span class="color d-none pink"></span> 
+                            <span class="color d-none cream"></span> 
+                            <span class="color d-none mix"></span>
                     </li>
 
                     <li class="product 
@@ -236,7 +257,11 @@
                         yardSize3
                         yearly3
                     ">
-                        No Mow Flowering Lawn  <span class="good2 d-none">&#128029;</span> <span class="good3 d-none">&#129419;</span>
+                        No Mow Flowering Lawn  
+                            <span class="good2 d-none">&#128029;</span> 
+                            <span class="good3 d-none">&#129419;</span> 
+                            <span class="maintenance1 d-none">&#128077;</span> 
+                            <span class="color d-none green"></span>
                     </li>
 
                     <li class="product 
@@ -252,7 +277,20 @@
                         yardSize1
                         yearly1 yearly3
                     ">
-                        Alternative Lawn Wildflower Seed Mix <span class="good2 d-none">&#128029;</span> <span class="good3 d-none">&#129419;</span>
+                        Alternative Lawn Wildflower Seed Mix 
+                            <span class="good2 d-none">&#128029;</span> 
+                            <span class="good3 d-none">&#129419;</span> 
+                            <span class="maintenance1 d-none">&#128077;</span> 
+                            <span class="maintenance2 d-none">&#9201;</span>
+                            <span class="maintenance3 d-none">&#127803;</span>
+                            <span class="color d-none cream"></span> 
+                            <span class="color d-none yellow"></span> 
+                            <span class="color d-none green"></span> 
+                            <span class="color d-none purple"></span> 
+                            <span class="color d-none blue"></span> 
+                            <span class="color d-none lavender"></span> 
+                            <span class="color d-none mix"></span> 
+                            <span class="color d-none pink"></span>
                     </li>
 
                     <li class="product 
@@ -268,7 +306,19 @@
                         yardSize1
                         yearly1
                     ">
-                        Wildflower Yard Annual Bold Color Mix <span class="good2 d-none">&#128029;</span> <span class="good3 d-none">&#129419;</span>
+                        Wildflower Yard Annual Bold Color Mix 
+                            <span class="good2 d-none">&#128029;</span> 
+                            <span class="good3 d-none">&#129419;</span> 
+                            <span class="maintenance1 d-none">&#128077;</span> 
+                            <span class="maintenance2 d-none">&#9201;</span>
+                            <span class="maintenance3 d-none">&#127803;</span>
+                            <span class="color d-none darkred"></span> 
+                            <span class="color d-none blue"></span> 
+                            <span class="color d-none yellow"></span> 
+                            <span class="color d-none brown"></span> 
+                            <span class="color d-none purple"></span> 
+                            <span class="color d-none cream"></span> 
+                            <span class="color d-none mix"></span>
                     </li>
 
                     <li class="product 
@@ -284,7 +334,22 @@
                         yardSize2
                         yearly1
                     ">
-                        Wildflower Yard Annual Vivid Variety <span class="good1 d-none">&#128038;</span> <span class="good2 d-none">&#128029;</span> <span class="good3 d-none">&#129419;</span>
+                        Wildflower Yard Annual Vivid Variety 
+                            <span class="good1 d-none">&#128038;</span> 
+                            <span class="good2 d-none">&#128029;</span> 
+                            <span class="good3 d-none">&#129419;</span> 
+                            <span class="maintenance1 d-none">&#128077;</span> 
+                            <span class="maintenance2 d-none">&#9201;</span>
+                            <span class="maintenance3 d-none">&#127803;</span>
+                            <span class="color d-none yellow"></span> 
+                            <span class="color d-none pink"></span> 
+                            <span class="color d-none darkred"></span> 
+                            <span class="color d-none cream"></span> 
+                            <span class="color d-none lavender"></span> 
+                            <span class="color d-none blue"></span> 
+                            <span class="color d-none brown"></span> 
+                            <span class="color d-none purple"></span> 
+                            <span class="color d-none mix"></span>
                     </li>
 
                     <li class="product 
@@ -300,7 +365,21 @@
                         yardSize2
                         yearly1
                     ">
-                        Picket Fence Wildflower Seed Mix <span class="good1 d-none">&#128038;</span> <span class="good2 d-none">&#128029;</span> <span class="good3 d-none">&#129419;</span>
+                        Picket Fence Wildflower Seed Mix 
+                            <span class="good1 d-none">&#128038;</span> 
+                            <span class="good2 d-none">&#128029;</span> 
+                            <span class="good3 d-none">&#129419;</span> 
+                            <span class="maintenance1 d-none">&#128077;</span> 
+                            <span class="maintenance2 d-none">&#9201;</span>
+                            <span class="maintenance3 d-none">&#127803;</span>
+                            <span class="color d-none pink"></span> 
+                            <span class="color d-none cream"></span> 
+                            <span class="color d-none yellow"></span> 
+                            <span class="color d-none darkred"></span> 
+                            <span class="color d-none blue"></span> 
+                            <span class="color d-none orange"></span> 
+                            <span class="color d-none purple"></span> 
+                            <span class="color d-none mix"></span>
                     </li>
 
                     <li class="product 
@@ -316,7 +395,20 @@
                         yardSize3
                         yearly1 yearly3
                     ">
-                        Mini Meadows Wildflower Seed Mix <span class="good2 d-none">&#128029;</span> <span class="good3 d-none">&#129419;</span>
+                        Mini Meadows Wildflower Seed Mix 
+                            <span class="good2 d-none">&#128029;</span> 
+                            <span class="good3 d-none">&#129419;</span> 
+                            <span class="maintenance1 d-none">&#128077;</span> 
+                            <span class="maintenance2 d-none">&#9201;</span>
+                            <span class="maintenance3 d-none">&#127803;</span>
+                            <span class="color d-none purple"></span> 
+                            <span class="color d-none orange"></span> 
+                            <span class="color d-none blue"></span> 
+                            <span class="color d-none cream"></span> 
+                            <span class="color d-none yellow"></span> 
+                            <span class="color d-none darkred"></span> 
+                            <span class="color d-none pink"></span> 
+                            <span class="color d-none mix"></span>
                     </li>
 
                     <li class="product 
@@ -332,7 +424,21 @@
                         yardSize3
                         yearly2 yearly3
                     ">
-                        Perennial Beauty Wildflower Seed Mix <span class="good1 d-none">&#128038;</span> <span class="good2 d-none">&#128029;</span> <span class="good3 d-none">&#129419;</span>
+                        Perennial Beauty Wildflower Seed Mix 
+                            <span class="good1 d-none">&#128038;</span> 
+                            <span class="good2 d-none">&#128029;</span> 
+                            <span class="good3 d-none">&#129419;</span> 
+                            <span class="maintenance1 d-none">&#128077;</span> 
+                            <span class="maintenance2 d-none">&#9201;</span>
+                            <span class="maintenance3 d-none">&#127803;</span>
+                            <span class="color d-none yellow"></span> 
+                            <span class="color d-none orange"></span> 
+                            <span class="color d-none brown"></span> 
+                            <span class="color d-none darkred"></span> 
+                            <span class="color d-none purple"></span> 
+                            <span class="color d-none pink"></span> 
+                            <span class="color d-none blue"></span> 
+                            <span class="color d-none mix"></span>
                     </li>
 
                     <li class="product 
@@ -347,7 +453,13 @@
                         yardSize1
                         yearly3 
                     ">
-                        Amazing Grace Creeping Phlox <span class="good2 d-none">&#128029;</span> <span class="good3 d-none">&#129419;</span>
+                        Amazing Grace Creeping Phlox 
+                            <span class="good2 d-none">&#128029;</span> 
+                            <span class="good3 d-none">&#129419;</span> 
+                            <span class="maintenance1 d-none">&#128077;</span> 
+                            <span class="maintenance2 d-none">&#9201;</span>
+                            <span class="maintenance4 d-none">&#129420;</span>
+                            <span class="color d-none cream"></span>
                     </li>
 
                     <li class="product 
@@ -361,7 +473,11 @@
                         yardSize1
                         yearly3
                     ">
-                        Orchid Frost Lamium
+                        Orchid Frost Lamium                             
+                            <span class="maintenance2 d-none">&#9201;</span>
+                            <span class="maintenance4 d-none">&#129420;</span>
+                            <span class="maintenance5 d-none">&#128007;</span>
+                            <span class="color d-none pink"></span>
                     </li>
 
                     <li class="product 
@@ -375,7 +491,15 @@
                         good1 good2 good3 good5 good4 
                         yardSize2
                     "> 
-                        Jacob Cline Bee Balm <span class="good1 d-none">&#128038;</span> <span class="good2 d-none">&#128029;</span> <span class="good3 d-none">&#129419;</span> <span class="good5 d-none">&#128330;</span>
+                        Jacob Cline Bee Balm 
+                            <span class="good1 d-none">&#128038;</span> 
+                            <span class="good2 d-none">&#128029;</span> 
+                            <span class="good3 d-none">&#129419;</span> 
+                            <span class="good5 d-none">&#128330;</span> 
+                            <span class="maintenance2 d-none">&#9201;</span>
+                            <span class="maintenance4 d-none">&#129420;</span>
+                            <span class="maintenance5 d-none">&#128007;</span>
+                            <span class="color d-none darkred"></span>
                     </li>
 
                     <li class="product 
@@ -389,7 +513,13 @@
                         good2 good3
                         yardSize2
                     ">
-                        Phenomenal Lavender <span class="good2 d-none">&#128029;</span> <span class="good3 d-none">&#129419;</span>
+                        Phenomenal Lavender 
+                            <span class="good2 d-none">&#128029;</span> 
+                            <span class="good3 d-none">&#129419;</span> 
+                            <span class="maintenance3 d-none">&#127803;</span>
+                            <span class="maintenance4 d-none">&#129420;</span>
+                            <span class="maintenance5 d-none">&#128007;</span>
+                            <span class="color d-none purple"></span>
                     </li>
 
                     <li class="product 
@@ -403,7 +533,14 @@
                         good1 good2 good3 good4
                         yardSize3
                     ">
-                        Joe Pye Weed <span class="good1 d-none">&#128038;</span> <span class="good2 d-none">&#128029;</span> <span class="good3 d-none">&#129419;</span>
+                        Joe Pye Weed 
+                            <span class="good1 d-none">&#128038;</span> 
+                            <span class="good2 d-none">&#128029;</span> 
+                            <span class="good3 d-none">&#129419;</span> 
+                            <span class="maintenance2 d-none">&#9201;</span>
+                            <span class="maintenance4 d-none">&#129420;</span>
+                            <span class="maintenance5 d-none">&#128007;</span>
+                            <span class="color d-none pink"></span>
                     </li>
 
                     <li class="special aesthetics2 yearly3">
@@ -467,6 +604,7 @@
 
             var colors = $('#colorSelect').val();
             var colorString;
+            var colorArray = $('#colorSelect').val(); 
             if(colors == null || colors.length === 0){
                 colors = '';
             }else{
@@ -480,6 +618,7 @@
 
             var maintenance = $('#maintenanceSelect').val();
             var maintenanceString;
+            var maintenanceArray = $('#maintenanceSelect').val();
             if(maintenance == null || maintenance.length === 0){
                 maintenance = '';
             }else{
@@ -520,7 +659,7 @@
                      && ($(this).hasClass(sunshade) || sunshade=='')
                      && ($(this).hasClass(soilM) || soilM=='')
                      && ($(this).hasClass(soilT) || soilT=='')
-                     && ($(this).is(colorString) || colors == '')
+                     // && ($(this).is(colorString) || colors == '')
                      && ($(this).hasClass(yardH) || yardH=='')
                      && ($(this).is(maintenanceString) || maintenance == '')
                      && ($(this).hasClass(yardSize) || yardSize=='')
@@ -557,6 +696,51 @@
                     $('span.good5').removeClass('d-none');
                 }else{
                     $('span.good5').addClass('d-none');
+                }
+            }
+
+            // console.log(colorArray)
+            // if(colorArray.length > 0){
+                colors = ['yellow', 'orange', 'brown', 'darkred', 'pink', 'purple', 'lavender', 'blue', 'green', 'cream', 'mix'];
+                for(var i=0; i<colors.length; i++){
+                    if(jQuery.inArray(colors[i], colorArray) !== -1){
+                        $('span.'+colors[i]).removeClass('d-none');
+                    }else{
+                        $('span.'+colors[i]).addClass('d-none');
+                    }
+                }               
+            // }
+
+            maintenanceArray    
+            if(maintenanceArray.length > 0){
+                if(jQuery.inArray("maintenance1", maintenanceArray) !== -1){
+                    $('span.maintenance1').removeClass('d-none');
+                }else{
+                    $('span.maintenance1').addClass('d-none');
+                }
+
+                if(jQuery.inArray("maintenance2", maintenanceArray) !== -1){
+                    $('span.maintenance2').removeClass('d-none');
+                }else{
+                    $('span.maintenance2').addClass('d-none');
+                }
+
+                if(jQuery.inArray("maintenance3", maintenanceArray) !== -1){
+                    $('span.maintenance3').removeClass('d-none');
+                }else{
+                    $('span.maintenance3').addClass('d-none');
+                }
+
+                if(jQuery.inArray("maintenance4", maintenanceArray) !== -1){
+                    $('span.maintenance4').removeClass('d-none');
+                }else{
+                    $('span.maintenance4').addClass('d-none');
+                }
+
+                if(jQuery.inArray("maintenance5", maintenanceArray) !== -1){
+                    $('span.maintenance5').removeClass('d-none');
+                }else{
+                    $('span.maintenance5').addClass('d-none');
                 }
             }
 
@@ -608,6 +792,22 @@
 
     <style>
         .nope{color:#aaa}
+        .color{width:15px; height: 15px; border-radius: 50%; display: inline-block; border: 1px solid black;}
+        .color.yellow{background-color: yellow}
+        .color.orange{background-color: orange}
+        .color.brown{background-color: brown}
+        .color.darkred{background-color: darkred}
+        .color.pink{background-color: pink}
+        .color.purple{background-color: purple}
+        .color.lavender{background-color:lavender }
+        .color.blue{background-color: blue}
+        .color.green{background-color: green}
+        .color.cream{background-color: #FFFDD0}
+        .color.mix{background: linear-gradient(180deg,
+   rgba(255, 0, 0, 1) 0%,
+   rgba(255, 255, 0, 1) 33%,
+   rgba(0, 192, 255, 1) 66%,
+   rgba(192, 0, 255, 1) 100%); }
     </style>
 </body>
 </html>
