@@ -23,12 +23,11 @@ var colors = [
     'brown',                    //3
     'dark red / scarlet /red',  //4
     'pink / rose / salmon',     //5
-    'purple',                   //6
-    'lavender',                 //7
-    'blue',                     //8
-    'green',                    //9
-    'cream / white',            //10
-    'mix'                       //11
+    'purple / lavender',        //6
+    'blue',                     //7
+    'green',                    //8
+    'cream / white',            //9
+    'mix'                       //10
 ];
 
 for(var i=0; i<colors.length; i++){
