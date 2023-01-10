@@ -15,7 +15,7 @@ var products = [
     {
         name: 'No Mow Lawn Grass Seed',
         zone: [4, 5, 6, 7],
-        colors: [9],
+        colors: [8],
         cycle: [2],
         sunshade: [1,2],
         yardheight: [2,3,4,5],
@@ -27,7 +27,7 @@ var products = [
     {
         name: 'Microclover Seed (Pelleted)',
         zone: [3, 4, 5, 6, 7, 8],
-        colors: [9],
+        colors: [8],
         cycle: [2],
         sunshade: [1,2],
         yardheight: [2,3,4,5],
@@ -39,7 +39,7 @@ var products = [
     {
         name: 'No Mow Lawn & Microclover Seed Mix',
         zone: [4, 5, 6, 7],
-        colors: [9],
+        colors: [8],
         cycle: [2],
         sunshade: [1,2],
         yardheight: [2,3,4,5],
@@ -51,7 +51,7 @@ var products = [
     {
         name: 'Low Work and Water Dwarf Fescue',
         zone: [5, 6, 7, 8, 9, 10],
-        colors: [9],
+        colors: [8],
         cycle: [2],
         sunshade: [1,2],
         yardheight: [2,3,4,5],
@@ -63,7 +63,7 @@ var products = [
     {
         name: 'Pollinator Cover Crop Seed Mix',
         zone: [4, 5, 6, 7, 8],
-        colors: [9,10,6,1,5],
+        colors: [8,9,6,1,5],
         cycle: [2,3],
         sunshade: [1],
         yardheight: [5],
@@ -75,7 +75,7 @@ var products = [
     {
         name: 'No Mow Flowering Lawn',
         zone: [4, 5, 6, 7],
-        colors: [9],
+        colors: [8],
         cycle: [2],
         sunshade: [1,2],
         yardheight: [2,3,4,5],
@@ -87,7 +87,7 @@ var products = [
     {
         name: 'Alternative Lawn Wildflower Seed Mix',
         zone: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        colors: [10,5,1,9,6,8,7],
+        colors: [9,5,1,8,6,7],
         cycle: [4],
         sunshade: [1,2],
         yardheight: [3,4,5],
@@ -99,7 +99,7 @@ var products = [
     {
         name: 'Wildflower Yard Annual Bold Color Mix',
         zone: [3, 4, 5, 6, 7, 8, 9, 10],
-        colors: [4,8,1,3,6,10],
+        colors: [4,7,1,3,6,9],
         cycle: [1],
         sunshade: [1,2],
         yardheight: [3,4,5],
@@ -111,7 +111,7 @@ var products = [
     {
         name: 'Wildflower Yard Annual Vivid Variety',
         zone: [3, 4, 5, 6, 7, 8, 9, 10],
-        colors: [1,5,4,10,7,8,3,6],
+        colors: [1,5,4,9,6,7,3],
         cycle: [1],
         sunshade: [1,2],
         yardheight: [3,4,5],
@@ -123,7 +123,7 @@ var products = [
     {
         name: 'Picket Fence Wildflower Seed Mix',
         zone: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        colors: [5,10,1,4,8,2,6],
+        colors: [5,9,1,4,7,2,6],
         cycle: [1],
         sunshade: [1,2],
         yardheight: [4,5],
@@ -135,7 +135,7 @@ var products = [
     {
         name: 'Mini Meadows Wildflower Seed Mix',
         zone: [3, 4, 5, 6, 7, 8],
-        colors: [5,6,2,8,10,1,4],
+        colors: [5,6,2,7,9,1,4],
         cycle: [4],
         sunshade: [1,2],
         yardheight: [5],
@@ -147,7 +147,7 @@ var products = [
     {
         name: 'Perennial Beauty Wildflower Seed Mix',
         zone: [1, 2, 3, 4, 5, 6, 7, 8],
-        colors: [1,2,3,4,5,6,8],
+        colors: [1,2,3,4,5,6,7],
         cycle: [2,3],
         sunshade: [1,2],
         yardheight: [4,5],
@@ -159,7 +159,7 @@ var products = [
     {
         name: 'Amazing Grace Creeping Phlox',
         zone: [2, 3, 4, 5, 6, 7, 8, 9],
-        colors: [10],
+        colors: [9],
         cycle: [2],
         sunshade: [1],
         yardheight: [2,3,4,5],
@@ -231,7 +231,7 @@ var products = [
     {
         name: 'Elijah Blue Fescue',
         zone: [4, 5, 6, 7, 8, 9],
-        colors: [9],
+        colors: [8],
         cycle: [2],
         sunshade: [1],
         yardheight: [3,4,5],
@@ -243,7 +243,7 @@ var products = [
     {
         name: 'Pennsylvania Sedge Grass',
         zone: [3, 4, 5, 6, 7, 8],
-        colors: [9],
+        colors: [8],
         cycle: [2],
         sunshade: [2,3],
         yardheight: [3,4,5],
@@ -255,7 +255,7 @@ var products = [
     {
         name: 'Karl Forester Feather Reed Grass',
         zone: [5, 6, 7, 8, 9],
-        colors: [9],
+        colors: [8],
         cycle: [2],
         sunshade: [1,2],
         yardheight: [4,5],
@@ -267,7 +267,7 @@ var products = [
     {
         name: 'Prairie Blues Little Bluestem',
         zone: [3, 4, 5, 6, 7, 8, 9],
-        colors: [9,8],
+        colors: [7,8],
         cycle: [2],
         sunshade: [1],
         yardheight: [4,5],
@@ -279,7 +279,7 @@ var products = [
     {
         name: 'Cloud Nine Tall Switchgrass / Northwind Switchgrass',
         zone: [4, 5, 6, 7, 8, 9],
-        colors: [9],
+        colors: [8],
         cycle: [2],
         sunshade: [1,2],
         yardheight: [4,5],
@@ -315,7 +315,7 @@ var products = [
     {
         name: 'Zinnia Mix',
         zone: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        colors: [11],
+        colors: [10],
         cycle: [1],
         sunshade: [1],
         yardheight: [4,5],
@@ -363,7 +363,7 @@ var products = [
     {
         name: 'Cosmos',
         zone: [2, 3, 4, 5, 6, 7, 8, 9, 10],
-        colors: [4,5,10],
+        colors: [4,5,9],
         cycle: [1],
         sunshade: [1,2],
         yardheight: [5],
@@ -375,7 +375,7 @@ var products = [
     {
         name: 'Bouquets for Day',
         zone: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        colors: [11],
+        colors: [10],
         cycle: [4],
         sunshade: [1,2],
         yardheight: [5],
@@ -387,7 +387,7 @@ var products = [
     {
         name: 'Monarch Mix',
         zone: [3, 4, 5, 6, 7, 8, 9, 10],
-        colors: [11],
+        colors: [10],
         cycle: [4],
         sunshade: [1,2],
         yardheight: [5],
