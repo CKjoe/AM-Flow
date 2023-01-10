@@ -48,30 +48,30 @@ var products = [
         solutions: [0,4],
         doinggood: []
     },
-    {
-        name: 'Low Work and Water Dwarf Fescue',
-        zone: [5, 6, 7, 8, 9, 10],
-        colors: [8],
-        cycle: [2],
-        sunshade: [1,2],
-        yardheight: [2,3,4,5],
-        planttime: [],
-        bloomtime: [2,3,4,5],
-        solutions: [0,4],
-        doinggood: []
-    },
-    {
-        name: 'Pollinator Cover Crop Seed Mix',
-        zone: [4, 5, 6, 7, 8],
-        colors: [8,9,6,1,5],
-        cycle: [2,3],
-        sunshade: [1],
-        yardheight: [5],
-        planttime: [7,8],
-        bloomtime: [1,2,3,4,5,6],
-        solutions: [0,7],
-        doinggood: [1]
-    },
+    // {
+    //     name: 'Low Work and Water Dwarf Fescue',
+    //     zone: [5, 6, 7, 8, 9, 10],
+    //     colors: [8],
+    //     cycle: [2],
+    //     sunshade: [1,2],
+    //     yardheight: [2,3,4,5],
+    //     planttime: [],
+    //     bloomtime: [2,3,4,5],
+    //     solutions: [0,4],
+    //     doinggood: []
+    // },
+    // {
+    //     name: 'Pollinator Cover Crop Seed Mix',
+    //     zone: [4, 5, 6, 7, 8],
+    //     colors: [8,9,6,1,5],
+    //     cycle: [2,3],
+    //     sunshade: [1],
+    //     yardheight: [5],
+    //     planttime: [7,8],
+    //     bloomtime: [1,2,3,4,5,6],
+    //     solutions: [0,7],
+    //     doinggood: [1]
+    // },
     {
         name: 'No Mow Flowering Lawn',
         zone: [4, 5, 6, 7],
@@ -96,18 +96,18 @@ var products = [
         solutions: [0],
         doinggood: [1,2,4,3]
     },
-    {
-        name: 'Wildflower Yard Annual Bold Color Mix',
-        zone: [3, 4, 5, 6, 7, 8, 9, 10],
-        colors: [4,7,1,3,6,9],
-        cycle: [1],
-        sunshade: [1,2],
-        yardheight: [3,4,5],
-        planttime: [],
-        bloomtime: [2,5,8],
-        solutions: [0],
-        doinggood: [1,2,4,3]
-    },
+    // {
+    //     name: 'Wildflower Yard Annual Bold Color Mix',
+    //     zone: [3, 4, 5, 6, 7, 8, 9, 10],
+    //     colors: [4,7,1,3,6,9],
+    //     cycle: [1],
+    //     sunshade: [1,2],
+    //     yardheight: [3,4,5],
+    //     planttime: [],
+    //     bloomtime: [2,5,8],
+    //     solutions: [0],
+    //     doinggood: [1,2,4,3]
+    // },
     {
         name: 'Wildflower Yard Annual Vivid Variety',
         zone: [3, 4, 5, 6, 7, 8, 9, 10],
@@ -120,18 +120,18 @@ var products = [
         solutions: [0,7],
         doinggood: [0,1,2,3,4]
     },
-    {
-        name: 'Picket Fence Wildflower Seed Mix',
-        zone: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        colors: [5,9,1,4,7,2,6],
-        cycle: [1],
-        sunshade: [1,2],
-        yardheight: [4,5],
-        planttime: [],
-        bloomtime: [],
-        solutions: [0],
-        doinggood: [1,2,4,3]
-    },
+    // {
+    //     name: 'Picket Fence Wildflower Seed Mix',
+    //     zone: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    //     colors: [5,9,1,4,7,2,6],
+    //     cycle: [1],
+    //     sunshade: [1,2],
+    //     yardheight: [4,5],
+    //     planttime: [],
+    //     bloomtime: [],
+    //     solutions: [0],
+    //     doinggood: [1,2,4,3]
+    // },
     {
         name: 'Mini Meadows Wildflower Seed Mix',
         zone: [3, 4, 5, 6, 7, 8],
@@ -144,42 +144,42 @@ var products = [
         solutions: [0,7],
         doinggood: [1,2,4,3]
     },
-    {
-        name: 'Perennial Beauty Wildflower Seed Mix',
-        zone: [1, 2, 3, 4, 5, 6, 7, 8],
-        colors: [1,2,3,4,5,6,7],
-        cycle: [2,3],
-        sunshade: [1,2],
-        yardheight: [4,5],
-        planttime: [],
-        bloomtime: [],
-        solutions: [0],
-        doinggood: [0,1,2,3,4]
-    },
-    {
-        name: 'Amazing Grace Creeping Phlox',
-        zone: [2, 3, 4, 5, 6, 7, 8, 9],
-        colors: [9],
-        cycle: [2],
-        sunshade: [1],
-        yardheight: [2,3,4,5],
-        planttime: [2,3,4,5,8],
-        bloomtime: [2,3],
-        solutions: [0,1],
-        doinggood: [1,2]
-    },
-    {
-        name: 'Orchid Frost Lamium',
-        zone: [3, 4, 5, 6, 7, 8],
-        colors: [5],
-        cycle: [2],
-        sunshade: [2,3],
-        yardheight: [2,3,4,5],
-        planttime: [2,3,4,5,8],
-        bloomtime: [3,4,5,6,7,8],
-        solutions: [0,1,3],
-        doinggood: [3]
-    },
+    // {
+    //     name: 'Perennial Beauty Wildflower Seed Mix',
+    //     zone: [1, 2, 3, 4, 5, 6, 7, 8],
+    //     colors: [1,2,3,4,5,6,7],
+    //     cycle: [2,3],
+    //     sunshade: [1,2],
+    //     yardheight: [4,5],
+    //     planttime: [],
+    //     bloomtime: [],
+    //     solutions: [0],
+    //     doinggood: [0,1,2,3,4]
+    // },
+    // {
+    //     name: 'Amazing Grace Creeping Phlox',
+    //     zone: [2, 3, 4, 5, 6, 7, 8, 9],
+    //     colors: [9],
+    //     cycle: [2],
+    //     sunshade: [1],
+    //     yardheight: [2,3,4,5],
+    //     planttime: [2,3,4,5,8],
+    //     bloomtime: [2,3],
+    //     solutions: [0,1],
+    //     doinggood: [1,2]
+    // },
+    // {
+    //     name: 'Orchid Frost Lamium',
+    //     zone: [3, 4, 5, 6, 7, 8],
+    //     colors: [5],
+    //     cycle: [2],
+    //     sunshade: [2,3],
+    //     yardheight: [2,3,4,5],
+    //     planttime: [2,3,4,5,8],
+    //     bloomtime: [3,4,5,6,7,8],
+    //     solutions: [0,1,3],
+    //     doinggood: [3]
+    // },
     {
         name: 'Jacob Cline Bee Balm',
         zone: [4, 5, 6, 7, 8, 9],
@@ -372,30 +372,30 @@ var products = [
         solutions: [0,7],
         doinggood: [1,2,3,4]
     },
-    {
-        name: 'Bouquets for Day',
-        zone: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        colors: [10],
-        cycle: [4],
-        sunshade: [1,2],
-        yardheight: [5],
-        planttime: [],
-        bloomtime: [3,4,5,6,7,8,9],
-        solutions: [0,7],
-        doinggood: [1,2,4]
-    },
-    {
-        name: 'Monarch Mix',
-        zone: [3, 4, 5, 6, 7, 8, 9, 10],
-        colors: [10],
-        cycle: [4],
-        sunshade: [1,2],
-        yardheight: [5],
-        planttime: [],
-        bloomtime: [2,3,4,5,6,7,8],
-        solutions: [0,7],
-        doinggood: [1,2,0,3,4]
-    },
+    // {
+    //     name: 'Bouquets for Day',
+    //     zone: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    //     colors: [10],
+    //     cycle: [4],
+    //     sunshade: [1,2],
+    //     yardheight: [5],
+    //     planttime: [],
+    //     bloomtime: [3,4,5,6,7,8,9],
+    //     solutions: [0,7],
+    //     doinggood: [1,2,4]
+    // },
+    // {
+    //     name: 'Monarch Mix',
+    //     zone: [3, 4, 5, 6, 7, 8, 9, 10],
+    //     colors: [10],
+    //     cycle: [4],
+    //     sunshade: [1,2],
+    //     yardheight: [5],
+    //     planttime: [],
+    //     bloomtime: [2,3,4,5,6,7,8],
+    //     solutions: [0,7],
+    //     doinggood: [1,2,0,3,4]
+    // },
 
 
 ];
